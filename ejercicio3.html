@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var Nombre = ["J","a","v","i","i","e","r",];
+
+var letras = new Map();
+
+for (var i=0; i < Nombre.length; i++){
+
+if(!letras.has(Nombre[i])){  //if not = unless/if not/ si no
+
+    letras.set(Nombre[i],1);
+}
+
+else {
+
+    letras.set(Nombre[i], letras.get(Nombre[i]) + 1);
+    
+}
+
+}
+
+console.log(letras);
+
+//Recibí un poco de ayuda para entender este comando map y como jugar con el sinceramente.
+//Es un poco confuso de utilizar.
+
+
+//for ( i=0; i < Nombre.length; i++){ //Hago bucle para cpger toda el array
+
+   // if(letras ==Nombre[i]){ 
+
+       // resultado+= Nombre[i]+"1";
+    //}
+
+   // else {
+
+       // letras=(Nombre[i] + letras(Nombre[i]) ?¿+ 1);
+        
+    //}
+
+//}
+
+//console.log(letras);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+<script>
+
+var Nombre = ["j", "a", "v", "i", "3", "r"];
+var resultado="";
+var i;
+
+for(i=0; i<Nombre.length;i++){
+    resultado+= Nombre[i]+" en la posición "+ i;
+
+if(Nombre[i]=="a"||Nombre[i]== "i"){
+
+    resultado+=" es una vocal."+"<br/>";
+
+}else if(Nombre[i]== "r" || Nombre[i]== "j" ||Nombre[i]=="v"){
+
+    resultado+=" no es una vocal."+"<br/>";
+
+}else{
+    resultado+=" no es una letra."+"<br/>";
+}
+
+}
+
+document.write(resultado);
+
+//También había pensado en hacerlo colocando todas las vocales o consonantes en caso de ser una
+//variable de otra persona (el nombre de otro vaya) pero como es el mío lo he dejado así. Además
+// que me llevaría mucho código puesto que no puedes poner : "a" ||"e" || "i" || "u"; Siempre
+//hay que especificar, en este caso el Nombre[i]. (cosa que no sabía así que bien por mi saberlo!!:)
+
+//Mala practica entrando!
+
+//var Nombre = ["j", "a", "v", "i", "e", "r"];
+        //var resultado="";
+        //var i;
+
+        //for(i=0; i<Nombre.length;i++){
+
+         
+           // if (Nombre[i] === "a"|| "e"|| "i"|| "o"|| "u"){
+    
+                   // resultado+= "He encontrado esta vocal" + Nombre[i] + "<br/>";
+
+           // }else if (Nombre[i]=== "b"|| "c"|| "d"||"f"||"g"||"h"||"j"||
+           // "k"||"l"||"m"||"n"||"ñ"||"p"||"q"||"r"||"s"||
+           //"t"||"v"||"w"||"x"||"y"||"z"){
+                
+               //resultado="He encontrado esta consonante" + Nombre[i] + "<br/>";
+
+            //}else{
+
+                //resultado+= "Eso no es una letra" + Nombre[i] + "<br/>"
+           // }
+        //}
+
+           // document.write(resultado);
+</script>
+
+
+
+
+
+   
+
+
+
+
+
+</body>
+</html>
